@@ -25,13 +25,13 @@ def test_read_data_data_types(results):
     return 1
 
 def test_read_data_len_train_data(results):
-    if results["train_data_length"] != 8548:
-        return f"Vocab length is {results['vocab_length']}, expected 8548"
+    if results["train_data_length"] != 9521:
+        return f"Vocab length is {results['vocab_length']}, expected 9521"
     return 1
 
 def test_generate_vocabs(results):
-    if results["vocab_size"] != 18624:
-        return f"Vocab length is {results['vocab_size']}, expected 18624"
+    if results["vocab_size"] != 19873:
+        return f"Vocab length is {results['vocab_size']}, expected 19873"
     if results["num_tags"] != 18:
         return f"Number of tags is {results['num_tags']}, expected 18"
     return 1

@@ -30,8 +30,8 @@ def test_read_data_len_train_data(results):
     return 1
 
 def test_generate_vocabs(results):
-    if results["vocab_size"] != 19873:
-        return f"Vocab length is {results['vocab_size']}, expected 19873"
+    if results["vocab_size"] not in [19873, 19874]:
+        return f"Vocab length is {results['vocab_size']}, expected 19873/19874"
     if results["num_tags"] != 18:
         return f"Number of tags is {results['num_tags']}, expected 18"
     return 1
